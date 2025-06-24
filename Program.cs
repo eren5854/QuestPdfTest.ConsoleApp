@@ -8,7 +8,9 @@ QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 var invoiceRepository = new InvoiceRepository();
 var invoice = invoiceRepository.GetInvoice();
 
-var document = new InvoiceDocument(invoice);
+//var document = new InvoiceDocument(invoice);
+
+var document = new ResumeDocument();
 
 document.ShowInCompanion();
 
